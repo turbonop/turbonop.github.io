@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TurboNOP Systems</title>
+<meta name="description" content="TurboNOP Systems. The fastest way to do nothing. Leisureware: an IBM PC emulator for Roblox, a binary analysis toolkit in Rust, and whatever comes next.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230000aa'/%3E%3Ctext x='8' y='12.5' font-family='monospace' font-size='11' font-weight='bold' text-anchor='middle' fill='%23ffff55'%3EN%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --blue:#0000aa; --ltblue:#5555ff; --ltgray:#aaaaaa; --white:#ffffff;
+  --yellow:#ffff55; --cyan:#55ffff; --red:#aa0000; --black:#000000;
+}
+html,body{margin:0;min-height:100%}
+body{
+  display:flex; flex-direction:column; min-height:100vh;
+  background:var(--blue); color:var(--yellow);
+  font:16px/1.35 "Perfect DOS VGA 437 Win","Px437 IBM VGA8","IBM Plex Mono",Consolas,"Lucida Console",monospace;
+}
+.bar{background:var(--ltgray); color:var(--black); padding:0 8px; white-space:pre; overflow:hidden}
+.bar b{color:var(--red); font-weight:normal}
+.desk{
+  flex:1; padding:24px 16px;
+  background-image:radial-gradient(var(--ltblue) .6px, transparent .7px);
+  background-size:8px 8px;
+}
+.win{
+  max-width:72ch; margin:0 auto; position:relative;
+  background:var(--blue); border:3px double var(--white);
+  padding:6px 12px 14px;
+}
+.title{display:flex; justify-content:space-between; color:var(--white); margin:-18px -4px 10px}
+.title span{background:var(--blue); padding:0 .5ch}
+pre{margin:0; white-space:pre-wrap; overflow-wrap:anywhere}
+.kw{color:var(--white)}
+.cm{color:var(--ltgray)}
+a{color:var(--cyan)}
+a:hover{background:var(--cyan); color:var(--blue); text-decoration:none}
+</style>
+</head>
+<body>
+<div class="bar">≡  <b>F</b>ile  <b>E</b>dit  <b>S</b>earch  <b>R</b>un  <b>C</b>ompile  <b>D</b>ebug  <b>T</b>ools  <b>O</b>ptions  <b>W</b>indow  <b>H</b>elp</div>
+<main class="desk">
+<section class="win" aria-label="TurboNOP Systems">
+<div class="title"><span>[■]</span><span>TURBONOP.PAS</span><span>1</span></div>
+<pre><span class="kw">program</span> TurboNOP;
+<span class="cm">{ TurboNOP Systems. The fastest way to do nothing. }</span>
+
+<span class="kw">uses</span> Leisure;
+
+<span class="cm">{ Leisureware: an IBM PC emulator for Roblox,
+  a binary analysis toolkit in Rust, and
+  whatever comes next. }</span>
+
+<span class="kw">begin</span>
+  <span class="kw">asm</span>
+    nop
+  <span class="kw">end</span>;
+<span class="kw">end</span>.
+
+<span class="cm">{ <a href="https://github.com/turbonop">github.com/turbonop</a> }</span></pre>
+</section>
+</main>
+<div class="bar"><b>F1</b> Help  <b>F2</b> Save  <b>F3</b> Open  <b>Alt+F9</b> Compile  <b>F9</b> Make  <b>F10</b> Menu</div>
+</body>
+</html>
